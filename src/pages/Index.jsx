@@ -45,6 +45,13 @@ const Index = () => {
           </HStack>
         ))}
       </VStack>
+      <HStack mt={8}>
+        <Text>{todos.filter((todo) => !todo.completed).length} active todos</Text>
+        <Spacer />
+        <Button onClick={() => setTodos(todos.filter((todo) => !todo.completed))} variant="outline">
+          Clear Completed
+        </Button>
+      </HStack>
     </Box>
   );
 };
