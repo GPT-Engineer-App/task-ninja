@@ -3,3 +3,6 @@ build = "npm run build"
 
 [gptengineer-app]
 project_id = "0971bc34-27c8-472c-bd77-1c05061e53c0"
+
+[[gptengineer-app.openapi]]
+url = "https://www.dnd5eapi.co/swagger/openapi.json\t"
